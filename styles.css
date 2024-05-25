@@ -1,0 +1,42 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3em;
+    list-style: none;
+    background-color: #777;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    padding: 2em;
+}
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+    position: fixed;
+    top: 0; /* Add this line to position it at the top */
+    width: 100%; /* Add this line to mak it full width */
+    background-color: #fff; /* Add this line to make it visible */
+    z-index: 1000; /* Add this line to ensure it's above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add this line for a subtle shadow */
+    padding: 0;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
