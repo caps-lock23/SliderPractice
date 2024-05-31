@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./styles2.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="main-nav">
-        <h1>One Piece</h1>
-        <ul>
-            <li><a href="./luffy.html">Luffy</a></li>
-            <li><a href="./zoro.html">Zoro</a></li>
-            <li><a href="./sanji.html">Sanji</a></li>
-        </ul>
+      <h1>One Piece</h1>
+      <ul>
+        <li><a href="./luffy.html">Luffy</a></li>
+        <li><a href="./zoro.html">Zoro</a></li>
+        <li><a href="./sanji.html">Sanji</a></li>
+      </ul>
     </div>
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./1.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./3.webp" alt=""></div>
-            <div class="swiper-slide"><img src="./4.webp" alt=""></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./1.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./2.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./3.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./4.webp" alt="" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, in, optio debitis magnam quod perferendis
-        corrupti libero inventore est sequi voluptas provident consequatur aperiam voluptatum repellat, numquam velit?
-        Quod, vitae.</p>
+    <div class="content">
+      <img src="./brook.webp" alt="" />
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, in,
+        optio debitis magnam quod perferendis corrupti libero inventore est
+        sequi voluptas provident consequatur aperiam voluptatum repellat,
+        numquam velit? Quod, vitae.
+      </p>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-</body>
-
+    <script src="./swiper.js"></script>
+  </body>
 </html>
